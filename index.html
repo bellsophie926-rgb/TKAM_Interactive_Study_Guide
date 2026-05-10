@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKAM Ultimate Final Study Guide - Interactive Active Recall</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #faf8f5; margin: 0; padding: 0; color: #2c3e50; line-height: 1.6; }
+        .header { background-color: #2c3e50; color: white; padding: 40px 20px; text-align: center; }
+        .header h1 { margin: 0 0 10px 0; font-size: 2.5em; }
+        .header p { margin: 0; font-size: 1.2em; color: #ecf0f1; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .section { background: white; border-radius: 10px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #3498db; }
+        h2 { color: #2980b9; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; margin-top: 0; }
+        
+        /* Accordion Styles */
+        .accordion {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            cursor: pointer;
+            padding: 18px 20px;
+            width: 100%;
+            text-align: left;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            outline: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: 0.3s;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion:hover, .accordion.active-acc {
+            background-color: #e3f2fd;
+            border-color: #3498db;
+            color: #2980b9;
+        }
+        .accordion::after {
+            content: '\002B'; /* Plus sign */
+            font-size: 24px;
+            color: #3498db;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .accordion.active-acc::after {
+            content: "\2212"; /* Minus sign */
+        }
+        .panel {
+            padding: 0 20px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-left: 4px solid #3498db;
+            margin-bottom: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+        .panel-content {
+            padding: 20px 0;
+        }
+        .eng { font-weight: bold; font-size: 1.1em; color: #34495e; margin-bottom: 5px; }
+        .chn { color: #555; margin-bottom: 15px; }
+        .detail { background-color: #f8f9fa; border-left: 4px solid #e74c3c; padding: 15px; border-radius: 0 5px 5px 0; font-size: 0.95em; }
+        .highlight { color: #e74c3c; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>TKAM Semester 2 Final Study Guide</h1>
+    <p>Interactive Active Recall Edition (点击右侧 "+" 展开复习，自测必备)</p>
+</div>
+
+<div class="container">
+    <!-- Section 1 -->
+    <div class="section">
+        <h2>📚 1. TKAM Book Info & Plot Elements (书籍信息与情节要素)</h2>
+        
+        <button class="accordion">Point of View (叙事视角)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="eng">First-person point of view.</div>
+                <div class="chn">第一人称视角。</div>
+                <div class="detail">
+                    <strong>Detailed Analysis:</strong> The story is narrated by Jean Louise "Scout" Finch looking back on her childhood. This means the reader sees the prejudiced, hypocritical adult world of Maycomb through the innocent and evolving eyes of a young girl. The genre is a <em>Bildungsroman</em> (a coming-of-age story).<br><br>
+                    <strong>详细解析:</strong> 故事是由成年的斯库特回忆讲述的。这种手法的精妙之处在于，读者是通过一个小女孩纯真且不断成长的视角，来审视梅岗镇充满偏见和虚伪的成人世界。本书体裁属于“成长小说”(Bildungsroman)。
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Setting (故事背景)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="eng">Maycomb, Alabama (1929-1941) during the Great Depression and Jim Crow era.</div>
+                <div class="chn">背景设定：大萧条与吉姆·克劳法时代的阿拉巴马州梅岗镇。</div>
+                <div class="detail">
+                    <strong>Detailed Analysis:</strong> Set in a fictional, "tired old town" suffering from widespread poverty due to the Great Depression. The society is governed by Jim Crow laws—strict racial segregation laws designed to promote white supremacy and stifle Black progress. Harper Lee was inspired by the real-life Scottsboro Trials.<br><br>
+                    <strong>详细解析:</strong> 故事发生在一个疲惫的虚构小镇。由于大萧条，镇上极度贫困。社会受“吉姆·克劳法”统治，这是一种极其严苛的种族隔离法律，旨在宣扬白人至上并压制黑人。作者的创作灵感源自真实的“斯科茨伯勒案件”。
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Conflicts (主要冲突)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="eng">Man vs. Society; Man vs. Man; Man vs. Self.</div>
+                <div class="chn">主要冲突：人与社会；人与人；人与自我。</div>
+                <div class="detail">
+                    <strong>Detailed Analysis:</strong> <br>
+                    1. <em>Man vs. Society:</em> Atticus fighting the entrenched racism of Maycomb. (阿提克斯对抗全镇根深蒂固的种族主义)<br>
+                    2. <em>Man vs. Man:</em> Bob Ewell physically attacking Scout and Jem. (鲍勃对孩子们的肢体袭击)<br>
+                    3. <em>Man vs. Self:</em> Jem struggling to reconcile his belief in justice with the town's cruel verdict. (杰姆在见证不公判决后，内心信念崩塌的挣扎)
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Climax & Resolution (高潮与结局)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="eng">The guilty verdict and Boo Radley's rescue.</div>
+                <div class="chn">高潮与结局：有罪判决与布·拉德利的救援。</div>
+                <div class="detail">
+                    <strong>Detailed Analysis:</strong> The primary <em>Climax</em> is the moment the jury delivers a guilty verdict for Tom Robinson despite clear evidence of his innocence, shattering the children's illusions. The <em>Resolution</em> occurs when Sheriff Heck Tate covers up Boo Radley's killing of Bob Ewell to protect Boo (the mockingbird), and Scout stands on Boo's porch, finally fully understanding empathy.<br><br>
+                    <strong>详细解析:</strong> 核心【高潮】是陪审团无视确凿证据判决无辜的汤姆有罪，这一刻彻底击碎了孩子们的纯真幻想。【结局】是警长掩盖了布杀人的事实以保护他，而斯库特站在布的门廊上，终于领悟了“换位思考”。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+        <h2>👥 2. Characters (核心人物精细解析)</h2>
+        
+        <button class="accordion">The Radleys: Boo Radley</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">A misunderstood, reclusive outcast who is initially feared as a monster but is actually a gentle soul. He is a primary "mockingbird" figure who saves the children's lives. (一个被误解的边缘人，起初被当成怪物，实则内心温柔。他是核心的“知更鸟”形象，最终救了孩子们。)</div>
+            </div>
+        </div>
+        
+        <button class="accordion">The Finches: Atticus, Scout, Jem</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Atticus:</strong> The moral compass of the novel. A lawyer who teaches empathy and courage. (全书的道德标杆，教导孩子们同理心与真正的勇敢。)<br>
+                    <strong>Scout:</strong> The 6-year-old innocent narrator who slowly learns the harsh realities of the world. (6岁的纯真叙述者，逐渐认识到成人世界的残酷。)<br>
+                    <strong>Jem:</strong> The older brother whose idealistic worldview is broken by the trial. (哥哥，他理想主义的世界观被这场不公的审判彻底击碎。)
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">The Ewells vs. The Cunninghams (Class Contrast)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>The Ewells:</strong> Represent the poorest, uneducated, "white trash." Bob Ewell falsely accuses Tom to save his pride. Burris Ewell is "the filthiest human," rude, and disrespectful. (代表最底层、无知且充满仇恨的群体。鲍勃诬陷黑人；布里斯粗鲁且不尊重老师。)<br>
+                    <strong>The Cunninghams:</strong> Equally poor farmers, but proud, polite, and honorable. Walter Cunningham refuses charity he cannot repay. <em>Lee uses this to show that character matters more than wealth.</em> (同样贫穷，但有骨气且守信用。Walter 拒绝接受他还不起的施舍。作者以此说明决定人价值的是品格，而非财富。)
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Other Key Figures: Calpurnia, Dill, Miss Maudie, Mrs. Dubose, Miss Gates, Tom Robinson, Judge Taylor</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Calpurnia:</strong> The strict Black housekeeper who acts as a mother figure and bridges the gap between the white and Black communities. (严厉的黑人管家，母亲替代者，白人与黑人社区的桥梁。)<br>
+                    <strong>Dill:</strong> The imaginative summer friend who represents childhood innocence (he cries during the unfair trial). (代表童真的夏日玩伴，在法庭上因无法忍受不公而大哭。)<br>
+                    <strong>Miss Maudie:</strong> An open-minded neighbor who shares Atticus's moral values. (思想开明的邻居，与阿提克斯价值观一致。)<br>
+                    <strong>Mrs. Dubose:</strong> A mean, racist neighbor whom Atticus calls the "bravest person" because she fights to die free of her morphine addiction. (恶毒的种族主义者，但被誉为最勇敢的人，因为她死前坚持戒毒。)<br>
+                    <strong>Miss Gates:</strong> A hypocritical teacher who condemns Hitler's prejudice but supports racism in Maycomb. (极度虚伪的双标老师，痛恨希特勒却支持本地的种族歧视。)<br>
+                    <strong>Tom Robinson:</strong> An innocent, hardworking Black man destroyed by systemic racism. The ultimate mockingbird. (被系统性种族主义摧毁的无辜黑人，终极知更鸟。)<br>
+                    <strong>Judge Taylor:</strong> The judge who deliberately appoints Atticus to defend Tom, hoping to give him a fair chance. (特意指派阿提克斯的法官，渴望给汤姆一丝公平。)
+                </div>
+            </div>
+        </div>
+        
+        <button class="accordion">Townspeople: Stephanie Crawford, Dolphus Raymond, Heck Tate, Mr. Avery</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Stephanie Crawford:</strong> The town gossip. (镇上的八卦大王。)<br>
+                    <strong>Dolphus Raymond:</strong> Pretends to be drunk to give the prejudiced town an "excuse" for his choice to live with Black people. (假装醉汉，以此作为他与黑人生活的借口，揭露社会虚伪。)<br>
+                    <strong>Heck Tate:</strong> The sheriff who protects Boo. (最终保护布的警长。)<br>
+                    <strong>Mr. Avery:</strong> A grumpy neighbor. (脾气暴躁的老邻居。)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <h2>✒️ 3. Literary Devices (文学修辞与写作手法)</h2>
+        
+        <button class="accordion">Symbolism & Theme (象征主义与主题)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Symbolism:</strong> Using objects to represent larger ideas. The Mockingbird symbolizes innocent beings (Tom, Boo) who only do good but are destroyed by society's evil.<br>
+                    <strong>Theme:</strong> The central message. Key themes include Empathy ("climb into his skin"), the destructive nature of Prejudice, and the Loss of Innocence.
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Figurative Language (修辞语言精析)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Simile (明喻 - uses like/as):</strong> <br>"Stiff as a stork." (僵硬得像只鹳 - 形容姑妈的刻板).<br> "Fitted into Maycomb like a hand into a glove." (像手戴进手套一样契合).<br>
+                    <strong>Metaphor (暗喻 - direct comparison):</strong> <br>"Tub of a hat." (帽子像个大浴盆).<br> "Sweat the amount due out of his flock." (flock暗指教堂信徒像羊群).<br>
+                    <strong>Personification (拟人):</strong> <br>"Its courthouse proud, its streets graciously wide." (赋予法院“骄傲”、街道“宽容”的人类特质).<br>
+                    <strong>Hyperbole (夸张):</strong> <br>"Sat there every day of her life." (极度夸张姑妈反客为主的强势姿态).
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Allusions, Flashback, Irony, Foreshadowing</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Allusions (典故):</strong> References to real history, like the Great Depression. (引用真实的“大萧条”等历史事件。)<br>
+                    <strong>Flashback (倒叙):</strong> The entire novel is structured as a flashback explaining how Jem broke his arm. (整本书的框架就是一个倒叙。)<br>
+                    <strong>Irony (讽刺):</strong> When reality contradicts expectations. E.g., Miss Gates hating Hitler but supporting Jim Crow laws; or Miss Caroline offering Walter a quarter she knows he can't repay. (预期与现实相反。如盖茨小姐的双标，或老师对穷孩子处境的完全误解。)<br>
+                    <strong>Foreshadowing (伏笔):</strong> Hints of future events. E.g., Bob Ewell spitting on Atticus foreshadows his attack on the kids. (鲍勃的威胁暗示了最后的袭击。)
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion">Social Commentary & The White Savior Narrative</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Social Commentary:</strong> The author's critique of systemic racism and classism in the South. (作者对系统性种族和阶级歧视的批判。)<br>
+                    <strong>White Savior Narrative (白人救世主叙事):</strong> A major modern controversy. The story shows a white character (Atticus) "saving" people of color, focusing more on his moral growth than on Black agency. This can reinforce unfair stereotypes that people of color cannot solve their own problems. (当代争议焦点。故事将白人塑造成拯救者，这可能会强化有色人种无力自救的不公平刻板印象。)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+        <h2>🗣️ 4. Quotes & Analysis (核心引言分析要求)</h2>
+        <button class="accordion">Exam Requirement for Quotes (引言考点要求)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Exam Requirement:</strong> Identify Speaker, Importance, and Literary Devices. (考试要求：识别说话者、重要性以及所用修辞。)<br><br>
+                    <strong>Key Quote 1:</strong> <em>"You never really understand a person until you consider things from his point of view… until you climb into his skin and walk around in it."</em><br>
+                    - Speaker: Atticus Finch.<br>
+                    - Importance: It establishes the central theme of empathy.<br>
+                    - Device: Metaphor (climbing into skin).<br><br>
+                    <strong>Key Quote 2:</strong> <em>"He was the filthiest human I had ever seen."</em><br>
+                    - Speaker: Scout (Narrator).<br>
+                    - Importance: Used for <strong>Indirect Characterization (STEAL method - Looks)</strong> to show Burris Ewell comes from a neglected family.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section">
+        <h2>📝 5. Grammar & Mechanics (语法考点)</h2>
+        <button class="accordion">Degrees of Comparison, Punctuation, Capitalization, Double Negatives</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Degrees of Comparison (比较级):</strong> Positive (fast) -> Comparative (faster) -> Superlative (fastest).<br>
+                    <strong>Punctuation (标点):</strong> Using the correct end marks (period ., question mark ?, exclamation point !).<br>
+                    <strong>Capitalization (大写):</strong> Always capitalize proper nouns (Maycomb, Atticus Finch).<br>
+                    <strong>Double Negatives (双重否定):</strong> The Ewells say things like <em>"I ain't got nothing."</em> This is grammatically incorrect. On a test, correct it to a single negative: <strong>"I don't have anything."</strong> (双重否定是极其不规范的语法，用来体现尤厄尔一家缺乏教育，考试时必须改为标准的单重否定)。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section">
+        <h2>📄 6. Writing Composition (多段落写作格式)</h2>
+        <button class="accordion">Multi-Paragraph Essay Components (多段落论文的核心构成)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Introduction (引言):</strong> Hooks the reader and provides background.<br>
+                    <strong>Thesis Statement (主题句):</strong> The most important sentence! A topic is just 1-2 words (e.g., "Prejudice"), but a Thesis Statement must be a <strong>complete sentence</strong> explaining a universal truth (e.g., "Systemic prejudice destroys the innocent."). It is typically the last sentence of the intro. (主题句绝不能是一个词，必须是一个完整的陈述句，阐述普世真理。)<br>
+                    <strong>Body Paragraphs (主体段):</strong> Contain integrated quotes and analysis.<br>
+                    <strong>Conclusion (结论段):</strong> Restates the thesis in a new way and summarizes main points.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section">
+        <h2>⚖️ 7. Atticus’ Closing Argument (结案陈词的修辞学)</h2>
+        <button class="accordion">Ethos, Logos, Pathos & Rhetorical Devices (三大诉求与修辞手段)</button>
+        <div class="panel">
+            <div class="panel-content">
+                <div class="detail">
+                    <strong>Ethos (伦理/信誉诉求):</strong> Appealing to ethics or duty. Atticus tells the jury, "In the name of God, do your duty," relying on moral obligation. (诉诸道德与责任。)<br>
+                    <strong>Logos (逻辑诉求):</strong> Appealing to facts and reasoning. Atticus uses medical evidence (Mayella's right-side bruises vs. Tom's crippled left arm) to prove Tom is innocent. (依靠硬性的医疗证据和逻辑推理。)<br>
+                    <strong>Pathos (情感诉求):</strong> Appealing to emotion. Atticus evokes pity for Mayella's sad life and sympathy for Tom's unjust suffering. (唤起陪审团的同情心。)<br>
+                    <strong>Rhetorical Devices (说服修辞):</strong> He uses techniques like <em>Parallelism</em> (排比) and <em>Rhetorical Questions</em> (反问) to strongly persuade the jury.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active-acc");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+    }
+</script>
+
+</body>
+</html>
